@@ -18,6 +18,7 @@ import java.nio.charset.StandardCharsets;
                 new Driver("Максим", "Mercedes-Benz E-Class", "Бизнес", 2, 640)));
 
         System.out.println("Все водители:");
+
         for (Driver d : drivers) {
             System.out.println("  " + d);
         }
@@ -25,4 +26,9 @@ import java.nio.charset.StandardCharsets;
         System.out.printf("\n");
         System.out.printf("Средний рейтинг: %.2f%n", RatingStats.average(drivers));
         System.out.println("Лучший водитель: " + RatingStats.best(drivers));
+
+        System.out.println("\nТариф «Комфорт»:");
+        for (Driver d : TariffFilter.byTariff(drivers, "Комфорт")) {
+            System.out.println("  " + d);
+        }
     }
