@@ -31,4 +31,6 @@ import java.nio.charset.StandardCharsets;
         for (Driver d : TariffFilter.byTariff(drivers, "Комфорт")) {
             System.out.println("  " + d);
         }
+
+        System.out.println("\n Цены указаны в " + config.getProperty("currency"));
     }
