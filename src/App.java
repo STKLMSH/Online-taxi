@@ -17,6 +17,7 @@ import java.nio.charset.StandardCharsets;
                 new Driver("Виталя", "Volkswagen Passat", "Комфорт", 4, 1320),
                 new Driver("Максим", "Mercedes-Benz E-Class", "Бизнес", 2, 640)));
 
+        drivers.sort((a, b) -> Double.compare(b.getRating(), a.getRating()));
         System.out.println("Все водители:");
 
         for (Driver d : drivers) {
