@@ -36,6 +36,7 @@ public class Driver {
 
     @Override
     public String toString() {
-        return name + " (" + car + ", " + tariff + "), рейтинг " + rating + ", поездок: " + trips;
+        return name + " (" + car + ", " + tariff + "), рейтинг "
+                + String.format("%.2f", rating) + ", поездок: " + trips;
     }
 }
