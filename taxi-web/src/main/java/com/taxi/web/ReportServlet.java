@@ -22,7 +22,7 @@ public class ReportServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         resp.setContentType("text/csv; charset=UTF-8");
         resp.setHeader("Content-Disposition", "attachment; filename=\"taxi-report.csv\"");
-        resp.getWriter().write('﻿');   // чтобы Excel понял, что файл в UTF-8
+        resp.getWriter().write('﻿');   // BOM: чтобы Excel понял, что файл в UTF-8
         resp.getWriter().write(service.toCsv());
     }
 }

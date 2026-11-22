@@ -1,5 +1,4 @@
 <%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <%@ taglib prefix="fmt" uri="jakarta.tags.fmt" %>
 <%@ taglib prefix="fn" uri="jakarta.tags.functions" %>
@@ -8,6 +7,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${service.serviceName}</title>
   <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css">
 </head>
@@ -80,8 +80,8 @@
     </tbody>
   </table>
 
-  <%-- 4. Отчёт: по тарифам и по рейтингу --%>
-  <h2>Отчёт</h2>
+  <%-- 4. Отчёт по всем водителям --%>
+  <h2>Отчёт по всем водителям</h2>
   <div class="report">
     <table>
       <thead>

@@ -12,7 +12,7 @@ class TaxiRepositoryTest {
         TaxiData data = TaxiRepository.load();
 
         assertEquals("BYN", data.getCurrency());
-        assertEquals(10, data.getDrivers().size());
+        assertEquals(42, data.getDrivers().size());
 
         Driver first = data.getDrivers().get(0);
         assertEquals("Андрей", first.getName());
