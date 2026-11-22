@@ -1,5 +1,2 @@
-<html>
-<body>
-<h2><%= "Hello World!" %></h2>
-</body>
-</html>
+<%-- Главная страница сразу открывает список водителей --%>
+<% response.sendRedirect("drivers"); %>
