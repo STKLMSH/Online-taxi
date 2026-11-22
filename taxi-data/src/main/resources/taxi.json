@@ -1,0 +1,16 @@
+{
+  "service": "Онлайн-такси 24/7",
+  "currency": "BYN",
+  "drivers": [
+    { "name": "Андрей",    "car": "Kia Rio",               "tariff": "Эконом",  "rating": 4.85, "trips": 1240, "earnings": 12896.00, "available": true  },
+    { "name": "Александр", "car": "Hyundai Solaris",       "tariff": "Эконом",  "rating": 4.62, "trips": 860,  "earnings": 8686.00,  "available": true  },
+    { "name": "Сергей",    "car": "Lada Vesta",            "tariff": "Эконом",  "rating": 3.95, "trips": 430,  "earnings": 4214.00,  "available": false },
+    { "name": "Дмитрий",   "car": "Renault Logan",         "tariff": "Эконом",  "rating": 4.41, "trips": 2105, "earnings": 20839.50, "available": true  },
+    { "name": "Егор",      "car": "Skoda Octavia",         "tariff": "Комфорт", "rating": 4.97, "trips": 1580, "earnings": 22120.00, "available": true  },
+    { "name": "Виталя",    "car": "Volkswagen Passat",     "tariff": "Комфорт", "rating": 4.74, "trips": 1320, "earnings": 17820.00, "available": false },
+    { "name": "Павел",     "car": "Toyota Camry",          "tariff": "Комфорт", "rating": 4.58, "trips": 990,  "earnings": 13860.00, "available": true  },
+    { "name": "Елена",     "car": "Kia K5",                "tariff": "Комфорт", "rating": 3.80, "trips": 310,  "earnings": 4185.00,  "available": true  },
+    { "name": "Максим",    "car": "Mercedes-Benz E-Class", "tariff": "Бизнес",  "rating": 4.90, "trips": 640,  "earnings": 19840.00, "available": true  },
+    { "name": "Наталья",   "car": "BMW 5 Series",          "tariff": "Бизнес",  "rating": 4.81, "trips": 455,  "earnings": 14560.00, "available": false }
+  ]
+}
