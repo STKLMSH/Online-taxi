@@ -18,7 +18,12 @@ import java.nio.charset.StandardCharsets;
                 new Driver("Максим", "Mercedes-Benz E-Class", "Бизнес", 5, 640)));
 
         System.out.println("Все водители:");
+
         for (Driver d : drivers) {
+            System.out.println("  " + d);
+        }
+        System.out.println("\nТариф «Комфорт»:");
+        for (Driver d : TariffFilter.byTariff(drivers, "Комфорт")) {
             System.out.println("  " + d);
         }
     }
