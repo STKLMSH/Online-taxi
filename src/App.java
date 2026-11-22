@@ -15,10 +15,14 @@ import java.nio.charset.StandardCharsets;
                 new Driver("Сергей", "Lada Vesta", "Эконом", 3, 430),
                 new Driver("Егор", "Skoda Octavia", "Комфорт", 5, 1580),
                 new Driver("Виталя", "Volkswagen Passat", "Комфорт", 4, 1320),
-                new Driver("Максим", "Mercedes-Benz E-Class", "Бизнес", 5, 640)));
+                new Driver("Максим", "Mercedes-Benz E-Class", "Бизнес", 2, 640)));
 
         System.out.println("Все водители:");
         for (Driver d : drivers) {
             System.out.println("  " + d);
         }
+
+        System.out.printf("\n");
+        System.out.printf("Средний рейтинг: %.2f%n", RatingStats.average(drivers));
+        System.out.println("Лучший водитель: " + RatingStats.best(drivers));
     }
