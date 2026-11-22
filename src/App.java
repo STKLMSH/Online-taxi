@@ -35,5 +35,3 @@ import java.nio.charset.StandardCharsets;
 
         System.out.println("\n Цены указаны в " + config.getProperty("currency"));
     }
-
-    // Здесь нужно крутое микросервисное приложение такси
