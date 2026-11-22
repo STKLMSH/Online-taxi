@@ -66,9 +66,9 @@ public class TaxiService {
     /** Статистика по рейтингу: сколько водителей в каждой группе */
     public Map<String, Long> ratingGroups() {
         Map<String, Long> groups = new LinkedHashMap<>();
-        groups.put("4.5 – 5.0", count(4.5, 5.01));
-        groups.put("4.0 – 4.5", count(4.0, 4.5));
-        groups.put("3.0 – 4.0", count(3.0, 4.0));
+        groups.put("4.5 - 5.0", count(4.5, 5.01));
+        groups.put("4.0 - 4.5", count(4.0, 4.5));
+        groups.put("3.0 - 4.0", count(3.0, 4.0));
         groups.put("ниже 3.0", count(0, 3.0));
         return groups;
     }
