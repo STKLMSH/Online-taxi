@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.taxi</groupId>
+    <artifactId>online-taxi</artifactId>
+    <version>1.0.0</version>
+  </parent>
+
+  <artifactId>taxi-web</artifactId>
+  <packaging>war</packaging>
+  <name>taxi-web</name>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.taxi</groupId>
+      <artifactId>taxi-core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>jakarta.servlet</groupId>
+      <artifactId>jakarta.servlet-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <finalName>taxi</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.eclipse.jetty.ee10</groupId>
+        <artifactId>jetty-ee10-maven-plugin</artifactId>
+        <configuration>
+          <webApp>
+            <contextPath>/taxi</contextPath>
+          </webApp>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
