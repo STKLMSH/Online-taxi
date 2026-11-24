@@ -19,6 +19,10 @@
       <artifactId>taxi-core</artifactId>
     </dependency>
     <dependency>
+      <groupId>com.taxi</groupId>
+      <artifactId>taxi-data</artifactId>
+    </dependency>
+    <dependency>
       <groupId>jakarta.servlet</groupId>
       <artifactId>jakarta.servlet-api</artifactId>
       <scope>provided</scope>
