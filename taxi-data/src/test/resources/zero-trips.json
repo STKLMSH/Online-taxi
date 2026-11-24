@@ -1,0 +1,14 @@
+{
+    "service": "Тестовое такси",
+    "currency": "BYN",
+    "drivers": [
+        { "name": "Новичок",
+        "car": "Lada Granta",
+        "tariff": "Эконом",
+        "rating": 5.00,
+        "trips": 0,
+        "earnings": 0.00,
+        "available": false }
+        ]
+}
+
